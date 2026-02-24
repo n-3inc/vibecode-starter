@@ -18,8 +18,8 @@ AIとの会話だけでアプリを開発する「バイブコーディング」
 - 工場・製造: 在庫チェックツール・生産スケジュール管理ツール
 - カスタマーサポート: FAQ検索ツール・問い合わせ内容の自動振り分けツール
 
-## 使用を開始する前に
-- [Vibecode Starter セットアップ手順](https://docs.google.com/document/d/1h9XnBZfm4ZsFwhLhF9b02Hpk275S7VnF4Hpsi3zvd4w/edit?usp=sharing) を参考にPCに必要なソフトウェアをインストールしてください
+## アプリ開発を開始する
+- [Vibecode Starter クイックスタート](https://docs.google.com/document/d/1h9XnBZfm4ZsFwhLhF9b02Hpk275S7VnF4Hpsi3zvd4w/edit?usp=sharing) を参考に、PCに必要なソフトウェアをインストールして、アプリ開発を開始してください。
 
 ## 開発の進め方
 1. AIに作りたいアプリの内容を伝える
