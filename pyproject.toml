@@ -1,0 +1,9 @@
+[project]
+name = "vibecode"
+version = "0.1.0"
+description = "Vibe coding starter kit with Gradio 6"
+requires-python = ">=3.11"
+dependencies = [
+    "gradio>=6.6.0",
+    "python-dotenv>=1.2.1",
+]
