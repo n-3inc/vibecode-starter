@@ -3,8 +3,7 @@
     "allow": [
       "Bash(lsof:*)",
       "Bash(uv run:*)",
-      "WebFetch(domain:raw.githubusercontent.com)",
-      "WebFetch(domain:www.gradio.app)"
+      "WebFetch(domain:*"
     ]
   }
 }
