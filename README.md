@@ -19,9 +19,15 @@ AIとの会話だけでアプリを開発する「バイブコーディング」
 - 工場・製造: 在庫チェックツール・生産スケジュール管理ツール
 - カスタマーサポート: FAQ検索ツール・問い合わせ内容の自動振り分けツール
 
+### 事前準備
+- Claude Subscriptionの登録 ([登録ページ](https://claude.com/pricing))
+- Node.jsとnpmのインストール ([インストール手順](https://nodejs.org/ja/))
+- Cloudflareアカウントの作成 ([作成ページ](https://dash.cloudflare.com/sign-up))
+- Visual Studio Codeのインストール ([インストールページ](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code))
+
 ## 開発の進め方
 1. AIに作りたいアプリの内容を伝える
-2. AIが指定された機能を実装し、アプリを起動
+2. AIが指定された機能を実装する
 3. Google Chrome で http://localhost:5173 を開いて、アプリの動作を確認する
 4. 修正したい点を AI に伝えると、AIが自動的にコードを修正、ブラウザの表示が自動更新される
 
@@ -36,14 +42,6 @@ AIとの会話だけでアプリを開発する「バイブコーディング」
 - 本キットの利用にあたっては、適用される法令・規制を遵守してください
 
 ## 開発したアプリをクラウドに公開する
-### 事前準備
-- Node.jsとnpmのインストール ([インストール手順](https://nodejs.org/ja/))
-- Cloudflareアカウントの作成 ([作成ページ](https://dash.cloudflare.com/sign-up))
-- VS Codeのターミナルを起動し、コマンドを実行する
-```bash
-# 以下のコマンドを実行するとブラウザが起動するので、Cloudflareアカウントでログインする
-npx wrangler login
-```
 - wrangler.jsonファイルを開き、"name"の値を任意のアプリ名に変更する
 ```bash
 # 変更前 (半角英数字とハイフンのみ使用可能)
@@ -52,9 +50,12 @@ npx wrangler login
 # 変更後 (例)
 "name": "my-first-app",
 ```
-
-### アプリの公開
-#### アプリのデプロイとアクセス制限の実施
+- VS Codeのターミナルを起動する
+- 認証情報を取得する
+```bash
+# 以下のコマンドを実行するとブラウザが起動するので、Cloudflareアカウントでログインする
+npx wrangler login
+```
 - アプリをクラウドにデプロイする
 ```bash
 # VS Codeのターミナルを開き、以下のコマンドを実行する
