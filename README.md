@@ -41,9 +41,6 @@ AIとの会話だけでアプリを開発する「バイブコーディング」
 - Cloudflareアカウントの作成 ([作成ページ](https://dash.cloudflare.com/sign-up))
 - VS Codeのターミナルを起動し、コマンドを実行する
 ```bash
-# Wrangler CLIのインストール
-npm install -g wrangler
-
 # 以下のコマンドを実行するとブラウザが起動するので、Cloudflareアカウントでログインする
 npx wrangler login
 ```
